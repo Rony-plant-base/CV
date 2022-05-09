@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <ul>
+      <strong>Email:</strong>sosarony675@gmail.com <br>
+      <strong>Phone:</strong>(321)-848-7940 <br>
+      <strong>Linkedin:</strong><a href="https://www.linkedin.com/in/ronniel-marange-335267206/">Ronniel Marange</a>
+    </ul>
+  </body>
+  <hr>
+  <form action="mailto:sosarony675@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+      <input type="text" name="yourName" value=""><br>
+    <label>Your Email:</label>
+      <input type="email" name="yourEmal" value=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+    <input type="submit" name="">
+  </form>
+</html>
+
+<!-- <form class="" action="index.html" method="post"> </form>
+The following attributes control behavior during form submission.
+
+-action
+>The URL that processes the form submission. This value can be overridden by a formaction attribute on a <button>, <input type="submit">, or <input type="image"> element. This attribute is ignored when method="dialog" is set.
+
+-enctype
+-If the value of the method attribute is post, enctype is the MIME type of the form submission. Possible values:
+
+>application/x-www-form-urlencoded: The default value.
+>multipart/form-data: Use this if the form contains <input> elements with type=file.
+>text/plain: Introduced by HTML5 for debugging purposes.
+This value can be overridden by formenctype attributes on <button>, <input type="submit">, or <input type="image"> elements.
+
+-method
+-The HTTP method to submit the form with. Possible (case insensitive) values:
+
+>post: The POST method; form data sent as the request body.
+>get: The GET method; form data appended to the action URL with a ? separator. Use this method when the form has no side-effects.
+>dialog: When the form is inside a <dialog>, closes the dialog and throws a submit event on submission without submitting data or clearing the form.
+Associating a <label> with an <input> element offers some major advantages:
+
+The label text is not only visually associated with its corresponding text input; it is programmatically associated with it too. This means that, for example, a screen reader will read out the label when the user is focused on the form input, making it easier for an assistive technology user to understand what data should be entered.
+When a user clicks or touches/taps a label, the browser passes the focus to its associated input (the resulting event is also raised for the input). That increased hit area for focusing the input provides an advantage to anyone trying to activate it — including those using a touch-screen device.
+To associate the <label> with an <input> element, you need to give the <input> an id attribute. The <label> then needs a for attribute whose value is the same as the input's id.
+
+Alternatively, you can nest the <input> directly inside the <label>, in which case the for and id attributes are not needed because the association is implicit:
+-->
